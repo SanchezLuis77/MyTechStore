@@ -7,7 +7,9 @@ export default class CreateProducts extends Component {
         productos:[],
         name:'',
         price:'',
-        description:''
+        description:'',
+        editing: false,
+        _id:''
     }
     async componentDidMount(){
         this.getProductos();
@@ -39,19 +41,30 @@ export default class CreateProducts extends Component {
     }
     cargarDatosProducto = async(id, nombre, precio, descripcion)=>{
         this.setState(
-            { name:nombre, _price:precio, _description:descripcion
+            { _id:id ,name:nombre, _price:precio, _description:descripcion
             }
         ) 
     }
 
     onSubmit=async(e) =>{
         e.preventDefault();
-            await axios.post('http://localhost:3000/productos',{
+        console.log(this.state.editing);
+        console.log(this.state._id);
+        const newProd={
             name:this.state.name,
             price:this.state._price,
             description:this.state._description
+        };
+        if(this.state._id){
+            await axios.put('http://localhost:3000/productos/'+this.state._id, newProd)
+            this.state._id = '';
+
+        }else{
+            await axios.post('http://localhost:3000/productos',newProd)
+        }
+
         
-        })
+            
         this.getProductos();
         this.onClean();
     }

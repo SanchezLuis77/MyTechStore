@@ -1,22 +1,52 @@
 {
   "productos": [
     {
-      "name": "sadasd",
-      "price": "12312312",
-      "description": "dadasd",
+      "name": "edwedwedew",
+      "price": "dewdewdwedew",
+      "description": "11111111111",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Mouse Gamer",
+      "price": 2500000,
+      "description": "Mouse Gamer Razer"
+    },
+    {
+      "id": 3,
+      "name": "Teclado Gamer",
+      "price": 2500000,
+      "description": "Teclado Gamer Razer"
+    },
+    {
+      "name": "weqwewq",
+      "price": "112223213",
+      "description": "frwfeweew",
       "id": 4
     },
     {
-      "name": "sadasdasdas",
-      "price": "12312312adsdas",
-      "description": "dadasddasda",
+      "name": "aaaaa",
+      "price": "cccc",
+      "description": "wwwww",
       "id": 5
     },
     {
-      "name": "asdasdas",
-      "price": "12312312",
-      "description": "asdasdasdasd",
+      "name": "dadsa",
+      "price": "dasdasd",
+      "description": "dasdas",
       "id": 6
+    },
+    {
+      "name": "dasdsadas",
+      "price": "dasdsadas",
+      "description": "11111111",
+      "id": 7
+    },
+    {
+      "name": "fafasdadas",
+      "price": "11122222",
+      "description": "hptaaaaaa",
+      "id": 8
     }
   ]
 }
