@@ -12,6 +12,11 @@ export default class CreateProducts extends Component {
     async componentDidMount(){
         this.getProductos();
     }
+    deleteUser = async(id)=>{
+        console.log("hola",id)
+        await axios.delete(`http://localhost:3000/productos/${id}`)
+        this.getProductos(); 
+    }
     getProductos= async () => {
         const rest = await axios.get('http://localhost:3000/productos');
         this.setState({productos: rest.data});
@@ -32,12 +37,20 @@ export default class CreateProducts extends Component {
             }
         )
     }
+    cargarDatosProducto = async(id, nombre, precio, descripcion)=>{
+        this.setState(
+            { name:nombre, _price:precio, _description:descripcion
+            }
+        ) 
+    }
+
     onSubmit=async(e) =>{
         e.preventDefault();
-        await axios.post('http://localhost:3000/productos',{
+            await axios.post('http://localhost:3000/productos',{
             name:this.state.name,
             price:this.state._price,
             description:this.state._description
+        
         })
         this.getProductos();
         this.onClean();
@@ -61,6 +74,9 @@ export default class CreateProducts extends Component {
                             <div className='container p-4'>
                                 <button type='submit' className="btn btn-primary">Guardar</button>
                             </div>
+                            <div className='container p-2'>
+                                <button type='reset' className="btn btn-primary" onClick={()=>this.onClean()}>Limpiar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -71,6 +87,8 @@ export default class CreateProducts extends Component {
                             <li
                                 className="list-group-item list-group-item-action"
                                 key={producto.id}
+                                onDoubleClick={()=>this.deleteUser(producto.id)}
+                                onClick={()=>this.cargarDatosProducto(producto.id,producto.name,producto.price,producto.description)}
                             >
                                 <div>{producto.name}</div> 
                                 <div>{producto.price}</div>
