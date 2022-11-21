@@ -87,7 +87,7 @@ export default class CreateProducts extends Component {
                             <div className='container p-4'>
                                 <button type='submit' className="btn btn-primary">Guardar</button>
                             </div>
-                            <div className='container p-2'>
+                            <div className='container p-4'>
                                 <button type='reset' className="btn btn-primary" onClick={()=>this.onClean()}>Limpiar</button>
                             </div>
                         </form>
@@ -95,6 +95,9 @@ export default class CreateProducts extends Component {
                 </div>
             <div className='col-md-8'>
                 <ul className='list-group'>
+                <div className='card card-body'>
+                <h2>Lista de Productos</h2>
+                </div>
                     {
                         this.state.productos.map(producto=>(
                             <li

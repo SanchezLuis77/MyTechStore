@@ -13,11 +13,11 @@ export default class Navigation extends Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/categorias">Categorias</Link>
-                            </li>
+                                <Link className="nav-link" to="/productos">Vista Administrador</Link>
+                            </li> 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/productos">Productos</Link>
-                            </li>       
+                                <Link className="nav-link" aria-current="page" to="/categorias">Vista Cliente</Link>
+                            </li>    
                         </ul>
                     </div>
                 </div>

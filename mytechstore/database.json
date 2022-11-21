@@ -1,52 +1,54 @@
 {
   "productos": [
     {
-      "name": "edwedwedew",
-      "price": "dewdewdwedew",
-      "description": "11111111111",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Mouse Gamer",
-      "price": 2500000,
-      "description": "Mouse Gamer Razer"
-    },
-    {
-      "id": 3,
-      "name": "Teclado Gamer",
-      "price": 2500000,
-      "description": "Teclado Gamer Razer"
-    },
-    {
       "name": "weqwewq",
       "price": "112223213",
       "description": "frwfeweew",
       "id": 4
     },
     {
-      "name": "aaaaa",
-      "price": "cccc",
-      "description": "wwwww",
-      "id": 5
-    },
-    {
-      "name": "dadsa",
-      "price": "dasdasd",
-      "description": "dasdas",
+      "name": "dadsaHOLA",
+      "price": "dasdasdMODIFICACION",
+      "description": "dasdas MODIFICACION2",
       "id": 6
     },
     {
-      "name": "dasdsadas",
-      "price": "dasdsadas",
-      "description": "11111111",
+      "name": "Nuevo",
+      "price": "10000",
+      "description": "agragamos nuevo producto",
       "id": 7
     },
     {
+      "name": "Nuevo 2",
+      "price": "1220330",
+      "description": "Agregamos otro producto nuevo para la muestra",
+      "id": 8
+    }
+  ],
+  "carrito": [
+    {
+      "id": 8,
       "name": "fafasdadas",
       "price": "11122222",
-      "description": "hptaaaaaa",
-      "id": 8
+      "description": "hptaaaaaa"
+    },
+    {
+      "name": "weqwewq",
+      "price": "112223213",
+      "description": "frwfeweew",
+      "id": 10
+    },
+    {
+      "name": "weqwewq",
+      "price": "112223213",
+      "description": "frwfeweew",
+      "id": 11
+    },
+    {
+      "name": "weqwewq",
+      "price": "112223213",
+      "description": "frwfeweew",
+      "id": 12
     }
   ]
 }
